@@ -5,6 +5,16 @@
     this.products = drinks;
   });
 
+  app.controller('TabController', function(){
+    this.tab = 1;
+    this.setTab = function(value){
+      this.tab = value;
+    };
+    this.isSet = function(value){
+      return this.tab == value;
+    };
+  });
+
   var drinks = [{ 
       name: 'Reyka Vodka',
       price: 25,
