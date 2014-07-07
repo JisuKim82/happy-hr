@@ -12,7 +12,7 @@
       images: [
         "images/reyka1.gif",
         "images/reyka2.gif",
-        "images/reyka2.gif"
+        "images/reyka3.gif"
       ],
       reviews: [{
         stars: 5,
