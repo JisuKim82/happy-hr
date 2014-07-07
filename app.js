@@ -10,9 +10,9 @@
       price: 25,
       description: 'Distilled and bottled in Iceland, the makers of Reyka have created their ideal vodka using the country\'s pristine resources.',
       images: [
-        "images/reyka1.gif",
-        "images/reyka2.gif",
-        "images/reyka3.gif"
+        "images/reyka1.jpeg",
+        "images/reyka2.jpeg",
+        "images/reyka3.jpeg"
       ],
       reviews: [{
         stars: 5,
@@ -29,9 +29,9 @@
       price: 40,
       description: 'The only whiskey in the world to be charcoal mellowed twice, giving it a unique smoothness.',
       images: [
-        "images/jack1.gif",
-        "images/jack2.gif",
-        "images/jack3.gif"
+        "images/jack1.jpeg",
+        "images/jack2.jpeg",
+        "images/jack3.jpeg"
       ],
       reviews: [{
         stars: 4,
@@ -48,9 +48,9 @@
       price: 200,
       description: 'Delivers what every super-premium Scotch whisky should, complexity and elegance intertwined.',
       images: [
-        "images/blue1.gif",
-        "images/blue2.gif",
-        "images/blue3.gif"
+        "images/blue1.jpeg",
+        "images/blue2.jpeg",
+        "images/blue3.jpeg"
       ],
       reviews: [{
         stars: 2,
