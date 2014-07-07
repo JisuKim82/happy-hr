@@ -15,12 +15,14 @@
     };
   });
 
-  app.controller('ReviewController', function(){
+  app.controller('ReviewController', function($scope){
     this.review = {};
     this.addReview = function(product){
       product.reviews.push(this.review);
       this.review = {};
+      $scope.reviewForm.$setPristine(true); //line needed to reset ng-class to pristine after form submitted   
     };
+
   });
 
   var drinks = [{ 
