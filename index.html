@@ -41,6 +41,32 @@
               </blockquote>
             </li>
           </div>
+          
+          <form name='reviewForm'>
+            <!-- Live Preview -->
+            <blockquote>
+              <strong>{{review.stars}} Stars</strong>
+              {{review.body}}
+              <cite>-{{review.author}}</cite>
+            </blockquote>
+            
+            <!-- Review fields -->
+            <h4>Submit a Review</h4>
+            <fieldset class='form-group'>
+              <select class='form-control' ng-options='stars for stars in [5,4,3,2,1]' title='Stars' ng-model='review.stars'>
+                <option value=''>Rate the Product</option>  
+              </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <textarea class="form-control" placeholder="Write a short review of the product..." title="Review" ng-model='review.body'></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+              <input type="email" class="form-control" placeholder="email@example.org" title="Email" ng-model='review.author'/>
+            </fieldset>
+            <fieldset class="form-group">
+              <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+            </fieldset>
+          </form>  
         </section>
       </div>
     </div>
