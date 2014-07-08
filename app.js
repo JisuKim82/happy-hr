@@ -17,6 +17,7 @@
 
   app.controller('ReviewController', function($scope){
     this.review = {};
+    this.review.createdOn = Date.now();
     this.addReview = function(product){
       product.reviews.push(this.review);
       this.review = {};
@@ -37,11 +38,13 @@
       reviews: [{
         stars: 5,
         body: "Better than goose",
-        author: "monkey@aol.com"
+        author: "monkey@aol.com",
+        createdOn: 1404584984429
       },{
         stars: 3,
         body: "It's ok...",
-        author: "swedishfish@msn.com"
+        author: "swedishfish@msn.com",
+        createdOn: 1404784984429
       }]
     },
     { 
@@ -56,11 +59,13 @@
       reviews: [{
         stars: 4,
         body: "Solid choice with coke",
-        author: "monkey@aol.com"
+        author: "monkey@aol.com",
+        createdOn: 1404665684429
       },{
         stars: 4,
         body: "Drink it neat",
-        author: "junior@msn.com"
+        author: "junior@msn.com",
+        createdOn: 1404683984429
       }] 
     },
     { 
@@ -75,11 +80,13 @@
       reviews: [{
         stars: 2,
         body: "The only blue I can afford is Labatt Blue",
-        author: "monkey@aol.com"
+        author: "monkey@aol.com",
+        createdOn: 1404284984429
       },{
         stars: 5,
         body: "Ship it!",
-        author: "junior@msn.com"
+        author: "junior@msn.com",
+        createdOn: 1404724985429
       }] 
     }
   ];

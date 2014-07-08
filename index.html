@@ -40,7 +40,7 @@
               <blockquote> 
                 <strong>{{review.stars}} Stars</strong>
                 {{review.body}}
-                <cite class=''>{{review.author}}</cite>
+                <cite class='clearfix'>-{{review.author}} on {{review.createdOn | date: 'MM/dd/yyyy @h:mma'}}</cite>
               </blockquote>
             </li>
           </div>
