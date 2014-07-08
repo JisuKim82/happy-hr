@@ -5,6 +5,13 @@
     this.products = drinks;
   });
 
+  app.controller('GalleryController', function(){
+    this.current = 0;
+    this.setCurrent = function(value){
+      this.current = value;
+    };
+  });
+
   app.controller('TabController', function(){
     this.tab = 1;
     this.setTab = function(value){
