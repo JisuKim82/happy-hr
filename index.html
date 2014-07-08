@@ -13,13 +13,13 @@
           {{product.name}}
           <em class="pull-right">{{product.price | currency}}</em>
         </h3>
-        <div class="gallery" ng-show="product.images.length">
+        <div ng-controller='GalleryController as gallery' ng-show="product.images.length">
           <ul class='thumbnails'>
-            <li><img class="img-responsive" ng-src="{{product.images[0]}}"></li>
+            <li><img class="img-responsive" ng-src="{{product.images[gallery.current]}}"></li>
           </ul>
           <ul class="thumbnails">
             <li class="img-responsive thumbnail" ng-repeat='image in product.images'>
-              <img ng-src="{{image}}" width='60' height='60'/>
+              <img ng-src="{{image}}" ng-click='gallery.setCurrent($index)' width='60' height='60'/>
             </li>
           </ul>
         </div>
